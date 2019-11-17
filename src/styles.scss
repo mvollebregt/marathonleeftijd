@@ -8,3 +8,20 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+@import '~@angular/material/theming';
+
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config(
+  $body-1: mat-typography-level(24px, 28px, 400),
+  $button: mat-typography-level(24px, 28px, 500)
+);
+
+@include mat-core($custom-typography);
+
+p {
+  font-size: 20px;
+  line-height: 24px;
+}
+

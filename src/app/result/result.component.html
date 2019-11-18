@@ -1,4 +1,5 @@
-<p>{{result.loper}} liep in {{result.jaar}} op {{result.leeftijd}}-jarige leeftijd een {{parameters.distance.name}}
+<p><a href="https://en.wikipedia.org/wiki/List_of_masters_world_records_in_road_running">{{result.loper}}</a> liep
+  in {{result.jaar}} op {{result.leeftijd}}-jarige leeftijd een {{parameters.distance.name}}
   in
   <span *ngIf="result.tijd.hours; else noHours">
     {{result.tijd.hours}}:{{result.tijd.minutes |number:"2.0-0"}}:{{result.tijd.seconds|number:"2.0-0"}}.

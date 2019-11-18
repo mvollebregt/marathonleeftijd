@@ -1,23 +1,17 @@
-import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {faFemale, faMale} from '@fortawesome/free-solid-svg-icons';
+import {UserParameters} from '../shared/user-parameters.service';
 
 @Component({
   selector: 'mar-status',
   templateUrl: './status.component.html',
   styleUrls: ['./status.component.scss']
 })
-export class StatusComponent implements OnChanges {
+export class StatusComponent {
 
-  @Input() gender: 'male' | 'female' = 'female';
+  @Input() parameters: UserParameters;
 
-  genderIcon = faFemale;
-  distance = 'halvemarathonleeftijd';
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes.gender) {
-      this.genderIcon = this.gender === 'male' ? faMale : faFemale;
-    }
-  }
-
+  faMale = faMale;
+  faFemale = faFemale;
 
 }

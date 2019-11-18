@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {UserParameters} from './shared/user-parameters.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'mar-root',
@@ -6,5 +8,9 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'marathonleeftijd';
+
+  constructor(public parameters: UserParameters, router: Router) {
+    router.navigate(['']);
+  }
+
 }

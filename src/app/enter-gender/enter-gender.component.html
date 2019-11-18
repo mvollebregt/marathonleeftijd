@@ -1,0 +1,13 @@
+<div>Ik ben een</div>
+<mat-radio-group class="genderChoice" [formControl]="genderControl">
+  <div class="genderOption" (click)="genderControl.setValue('male')">
+    <fa-icon [icon]="faMale" size="3x"></fa-icon>
+    <mat-radio-button value="male">Man</mat-radio-button>
+  </div>
+  <div class="genderOption" (click)="genderControl.setValue('female')">
+    <fa-icon [icon]="faFemale" size="3x"></fa-icon>
+    <mat-radio-button value="female">Vrouw</mat-radio-button>
+  </div>
+</mat-radio-group>
+
+

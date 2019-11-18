@@ -1,7 +1,8 @@
-<fa-icon class="gender-icon" [icon]="genderIcon" size="lg"></fa-icon>
-<div>{{distance}}</div>
-<div class="time">
-  <span>2</span>
-  <span>05</span>
-  <span>53</span>
+<fa-icon class="gender-icon" *ngIf="parameters.gender" [icon]="parameters.gender === 'male' ? faMale : faFemale"
+         size="lg"></fa-icon>
+<div>{{parameters?.distance?.fullName}}</div>
+<div class="time" *ngIf="parameters.finishTime as time">
+  <span *ngIf="time.hours">{{time.hours}}</span>
+  <span>{{time.minutes | number:"2.0-0"}}</span>
+  <span>{{time.seconds | number: "2.0-0"}}</span>
 </div>

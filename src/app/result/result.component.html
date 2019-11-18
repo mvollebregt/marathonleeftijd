@@ -1,0 +1,12 @@
+<p>{{result.loper}} liep in {{result.jaar}} op {{result.leeftijd}}-jarige leeftijd een {{parameters.distance.name}}
+  in
+  <span *ngIf="result.tijd.hours; else noHours">
+    {{result.tijd.hours}}:{{result.tijd.minutes |number:"2.0-0"}}:{{result.tijd.seconds|number:"2.0-0"}}.
+  </span>
+  <ng-template #noHours>
+    {{result.tijd.minutes |number:"2.0-0"}}:{{result.tijd.seconds|number:"2.0-0"}}.
+  </ng-template>
+</p>
+<p>Jouw {{parameters.distance.fullName}} komt daarmee uit op</p>
+<div class="age">{{result.jouwleeftijd | number : "2.0-1"}}</div>
+<button href="." mat-flat-button color="accent">Bereken opnieuw</button>

@@ -1,0 +1,10 @@
+<div>Mijn tijd op de {{parameters?.distance?.name}} is</div>
+
+<form [formGroup]="timeGroup" (ngSubmit)="onSubmit()">
+  <div class="time">
+    <input formControlName="hours" matInput type="number" min="0" max="99">
+    <input formControlName="minutes" matInput type="number" min="0" max="59">
+    <input formControlName="seconds" matInput type="number" min="0" max="59">
+  </div>
+  <button mat-flat-button type="submit" color="accent">Berekenen</button>
+</form>

@@ -1,0 +1,6 @@
+<div>Ik ben benieuwd naar mijn</div>
+<mat-radio-group class="distanceChoice" [formControl]="distanceControl">
+  <mat-radio-button *ngFor="let value of values" [value]="value">{{value.fullName}}</mat-radio-button>
+</mat-radio-group>
+
+

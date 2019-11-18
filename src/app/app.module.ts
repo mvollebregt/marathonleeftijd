@@ -9,12 +9,23 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {StatusComponent} from './status/status.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {MatButtonModule} from '@angular/material/button';
+import {EnterGenderComponent} from './enter-gender/enter-gender.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {ReactiveFormsModule} from '@angular/forms';
+import {EnterDistanceComponent} from './enter-distance/enter-distance.component';
+import {EnterTimeComponent} from './enter-time/enter-time.component';
+import {MatInputModule} from '@angular/material/input';
+import {ResultComponent} from './result/result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
     StatusComponent,
+    EnterGenderComponent,
+    EnterDistanceComponent,
+    EnterTimeComponent,
+    ResultComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,8 +33,10 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     FontAwesomeModule,
     MatButtonModule,
+    MatInputModule,
+    MatRadioModule,
     MatToolbarModule,
-    FontAwesomeModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

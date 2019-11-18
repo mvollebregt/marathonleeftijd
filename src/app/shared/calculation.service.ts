@@ -109,7 +109,7 @@ const man42k = [
   {loper: 'Ed Whitlock', jaar: 2007, leeftijd: 76, tijd: {hours: 3, minutes: 4, seconds: 53}},
   {loper: 'Ed Whitlock', jaar: 2011, leeftijd: 80, tijd: {hours: 3, minutes: 15, seconds: 53}},
   {loper: 'Ed Whitlock', jaar: 2016, leeftijd: 85, tijd: {hours: 3, minutes: 56, seconds: 38}},
-  {loper: 'Mike Fremont', jaar: 201, leeftijd: 9, tijd: {hours: 6, minutes: 35, seconds: 47}}
+  {loper: 'Mike Fremont', jaar: 2012, leeftijd: 90, tijd: {hours: 6, minutes: 35, seconds: 47}}
 ];
 
 const female5k = [
